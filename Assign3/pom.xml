@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>CS6240</groupId>
+  <artifactId>neu.mr</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>neu.mr</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+<repositories>
+                                <repository>
+                                                <id>maven-hadoop</id>
+                                                <name>Hadoop Releases</name>
+                                                <url>https://repository.cloudera.com/content/repositories/releases/</url>
+                                </repository>
+                                <repository>
+                                                <id>cloudera-repos</id>
+                                                <name>Cloudera Repos</name>
+                                                <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+                                </repository>
+                                <!-- Ended here -->
+</repositories>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.apache.hadoop</groupId>
+  		<artifactId>hadoop-mapreduce</artifactId>
+  		<version>2.6.0-cdh5.7.0</version>
+  		<type>pom</type>
+		<scope>provided</scope>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.hadoop</groupId>
+  		<artifactId>hadoop-common</artifactId>
+  		<version>2.6.0-cdh5.7.0</version>
+		<scope>provided</scope>
+  	</dependency>
+  	  	<dependency>
+  		<groupId>org.apache.hadoop</groupId>
+  		<artifactId>hadoop-hdfs</artifactId>
+  		<version>2.6.0-cdh5.7.0</version>
+		<scope>provided</scope>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.hadoop</groupId>
+  		<artifactId>hadoop-mapreduce-client-core</artifactId>
+  		<version>2.6.0-cdh5.7.0</version>
+		<scope>provided</scope>
+  	</dependency>
+    <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
+        <version>2.6.0-cdh5.7.0</version>
+        <scope>provided</scope>
+    </dependency>
+ 		
+  </dependencies>
+
+</project>
