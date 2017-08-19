@@ -1,0 +1,2 @@
+Goals: Compare Combiners to the in-mapper combining design pattern. Use keys, comparators, and
+Partitioner to implement secondary sort.
