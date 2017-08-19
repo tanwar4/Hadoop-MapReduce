@@ -1,3 +1,8 @@
+
+Goal: Implement PageRank in MapReduce to explore the behavior of an iterative graph algorithm.
+
+
+
 ###################################################
   
   BUILD AND RUN
